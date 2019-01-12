@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etch a Sketch</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <center>
+    <h1>This is the grid</h1>&nbsp;
+    <div id="grid-parent"></div>
+  </center>
+
+  <script>
+
+    // Create grid
+    $(document).ready(function() {
+      grid_x = 16;
+      grid_y = 16;
+
+      for (i = 0; i < grid_x; i++) {
+        $('#grid-parent').append('<div>div</div>');
+      }
+    });
+  </script>
+</body>
+</html>
